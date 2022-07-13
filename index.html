@@ -4,19 +4,94 @@
 <head>
      <title>okekings portfolio</title>
      <link href="mainstyle.css" rel="stylesheet">
-     <link rel="stylesheet" type="text/css" href="mystyle.css" ; style> ; color: orange; ; /style>
+     <link rel="stylesheet" type="text/css" href="mainstyle.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
      <div class="topnav">
           <a class="active" href="#home">Home</a>
-          <a href="#news">My Works</a>
-          <a href="#contact">Contact</a>
+          <a href="#works">My Works</a>
+          <a href="#contact.html">Contact</a>
           <a href="#about">About Me</a>
      </div>
 
+     <section>
+          <h1 class="grey_text">Web Developer</h1>
+     </section>
+     <section class="home_text">
+          <h4>Hello World!</h4>
+          <h1>I'm Odim Kingsley</h1>
+          <h3>A Web Developer who is enthusiatic of building <br />your responsive and beautiful website
+               <br /> -just for you
+          </h3>
+     </section>
 
+
+     <!----------------------About Page Here -------------------->
+
+     <section class="about_page">
+          <a href="#about.html" class="about_link">About Me</a>
+          <div class="row">
+               <div class="column">
+                    <h1 class="about_title">Web Developing is my passion for Problem Solving.</h1>
+               </div>
+
+               <div class="column">
+                    <p class="paragraph_of_about">I have always been passionate about web development projects and have
+                         not stopped working and learning about new technologies as they emerges. Other than sitting in
+                         from of my display screen, I enjoy myself in casual sports such as playing football with
+                         friends or reading books.</p>
+
+                    <p class="paragraph_of_about">I'm grateful that my job allows me to work from anywhere. I am active
+                         on LinkedIn and Twitter where I share about my tech exposure and my upcoming projects.</p>
+               </div>
+          </div>
+
+     </section>
+
+
+     <!----------------------Contact Form Here -------------------->
+
+
+     <div class="container">
+          <a href="#contact.html" class="contact_link">Contact</a>
+          <form action="action_page.php">
+
+               <label for="fname">First Name</label>
+               <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+               <label for="lname">Last Name</label>
+               <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+               <label for="lname">Email</label>
+               <input type="text" id="email" name="email" placeholder="Enter Your Email">
+
+               <label for="lname">Phone (Optional)</label>
+               <input type="text" id="phone" name="number" placeholder="Enter Phone Number">
+
+               <label for="subject">Subject</label>
+               <textarea id="subject" name="subject" placeholder="Message..." style="height:200px"></textarea>
+
+               <input type="submit" value="Submit">
+
+          </form>
+
+     <!--------------------Contact Address and Social Media---------------------------->
+     </div>
 
 </body>
+
+
+<!---------------- Footer -------------------->
+<footer>
+     <div class="footer_container">All Rights Reserved. &copy 2022 Odim Kingsley Portfolio</div>
+</footer>
+
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 </html>
