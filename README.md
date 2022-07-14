@@ -1,1 +1,1 @@
-This is all about my GitHub static website pages 
+This is all about my GitHub static portfolio website 
