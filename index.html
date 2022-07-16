@@ -2,7 +2,13 @@
 <html>
 
 <head>
-     <title>okekings portfolio</title>
+     <meta charset="UTF-8">
+     <meta name="description" content="Odim Kingsley Portfolio">
+     <meta name="keywords" content="Odim Kingsley, Odim, Kingsley, Okekings, okekingsonline">
+     <meta name="author" content="Odim Kingsley">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="refresh" content="30>">
+     <title>Odim Kingsley Portfolio</title>
      <link href="mainstyle.css" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="mainstyle.css" />
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,28 +19,48 @@
 <body>
 
      <div class="topnav">
-          <a class="active" href="#home">Home</a>
-          <a href="#works">My Works</a>
-          <a href="#contact.html">Contact</a>
-          <a href="#about">About Me</a>
+          <div class="logo">
+               <img src="/okekings/images/logo.png" alt="logo" />
+          </div>
+          <nav id="navbar">
+               <a class="active" href="index.html">Home</a>
+               <a href="#works">Works</a>
+               <a href="#about">About Me</a>
+               <a href="#contact">Contact</a>
+
+               <!-------------------- Mobile View Menu Icon------------------------>
+               <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+               </div>
+          </nav>
      </div>
 
+
+     <!------------------- Above-The-Fold Section----------------------------->
      <section>
           <h1 class="grey_text">Web Developer</h1>
      </section>
-     <section class="home_text">
-          <h4>Hello World!</h4>
-          <h1>I'm Odim Kingsley</h1>
-          <h3>A Web Developer who is enthusiatic of building <br />your responsive and beautiful website
-               <br /> -just for you
-          </h3>
-     </section>
+
+     <div class="home_background">
+          <section class="home_text">
+               <h4>Hello World!</h4>
+               <h1>I'm Odim Kingsley</h1>
+               <p>A Web Developer who is enthusiatic of building <br />your beautiful and responsive website
+                    <br /> - just for you
+               </p>
+          </section>
+          <button class="hero-btn"><a href="#contact">Get In Touch</a></button>
+     </div>
+
+
 
 
      <!----------------------About Page Here -------------------->
 
      <section class="about_page">
-          <a href="#about.html" class="about_link">About Me</a>
+          <a href="#about" class="about_link">About Me</a>
           <div class="row">
                <div class="column">
                     <h1 class="about_title">Web Developing is my passion for Problem Solving.</h1>
@@ -56,31 +82,31 @@
 
      <!----------------------Contact Form Here -------------------->
 
+     <div class="form-group">
+          <div class="row">
+               <div class="column">
+                    <a href="#contact" class="contact_link">Contact</a>
+                    <div class="container">
+                         <form action="action_page.php">
+                              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                              <input type="text" id="email" name="email" placeholder="Enter Your Email">
+                              <input type="text" id="phone" name="number" placeholder="Enter Phone Number">
+                              <textarea id="subject" name="subject" placeholder="Message..."
+                                   style="height:200px"></textarea>
+                              <input type="submit" value="Submit">
+                         </form>
+                    </div>
+               </div>
 
-     <div class="container">
-          <a href="#contact.html" class="contact_link">Contact</a>
-          <form action="action_page.php">
+               <div class="column">
+                    <h3>Social Media</h3>
+               </div>
+          </div>
 
-               <label for="fname">First Name</label>
-               <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-               <label for="lname">Last Name</label>
-               <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-               <label for="lname">Email</label>
-               <input type="text" id="email" name="email" placeholder="Enter Your Email">
-
-               <label for="lname">Phone (Optional)</label>
-               <input type="text" id="phone" name="number" placeholder="Enter Phone Number">
-
-               <label for="subject">Subject</label>
-               <textarea id="subject" name="subject" placeholder="Message..." style="height:200px"></textarea>
-
-               <input type="submit" value="Submit">
-
-          </form>
-
-     <!--------------------Contact Address and Social Media---------------------------->
+          <!--------------------Contact Address and Social Media---------------------------->
      </div>
 
 </body>
@@ -92,6 +118,6 @@
 </footer>
 
 
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script srch="sitejs.js"></script>
 
 </html>
