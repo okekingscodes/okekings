@@ -1,123 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng" dir="ltr">
 
 <head>
-     <meta charset="UTF-8">
+     <meta charset="utf-8">
      <meta name="description" content="Odim Kingsley Portfolio">
-     <meta name="keywords" content="Odim Kingsley, Odim, Kingsley, Okekings, okekingsonline">
+     <meta name="keywords" content="Odim, Kingsley, Portfolio, Okekings, Odim Kingsley, web developer, webmaster">
      <meta name="author" content="Odim Kingsley">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="refresh" content="30>">
+     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
      <title>Odim Kingsley Portfolio</title>
-     <link href="mainstyle.css" rel="stylesheet">
-     <link rel="stylesheet" type="text/css" href="mainstyle.css" />
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css.css">
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+     <script>
+          $(document).ready(function () {
+               $('#icon').click(function () {
+                    $('ul').toggleClass('show');
+               });
+          });
+     </script>
 </head>
 
+
+<!------------------------BODY BEGINS HERE ------------------------------------->
+
 <body>
+     <nav>
+          <label class="logo">D<>loper</label>
+          <ul>
+               <li><a class="active" href="index.html">Home</a></li>
+               <li><a href="#work">Work</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#contact">Contact</a></li>
+          </ul>
+          <label id="icon">
+               <i class="fas fa-clock"></i>
+          </label>
+     </nav>
 
-     <div class="topnav">
-          <div class="logo">
-               <img src="/okekings/images/logo.png" alt="logo" />
-          </div>
-          <nav id="navbar">
-               <a class="active" href="index.html">Home</a>
-               <a href="#works">Works</a>
-               <a href="#about">About Me</a>
-               <a href="#contact">Contact</a>
+     <!--------------- ABOVE THE FOLD ---------------------------->
 
-               <!-------------------- Mobile View Menu Icon------------------------>
-               <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-               </div>
-          </nav>
-     </div>
-
-
-     <!------------------- Above-The-Fold Section----------------------------->
-     <section>
-          <h1 class="grey_text">Web Developer</h1>
-     </section>
-
-     <div class="home_background">
-          <section class="home_text">
-               <h4>Hello World!</h4>
-               <h1>I'm Odim Kingsley</h1>
-               <p>A Web Developer who is enthusiatic of building <br />your beautiful and responsive website
-                    <br /> - just for you
+     <div class="container-1">
+          <div class="box-1">
+               <p id="home-paragraph">I am Odim Kingsley <br /> a web developer and <br />software engineer in training
+                    that
                </p>
-          </section>
-          <button class="hero-btn"><a href="#contact">Get In Touch</a></button>
+               <p id="home-title">a modernize and responsive website <br />- just for you</p>
+               <a href="#" class="hero-btn">Download Resume</a>
+          </div>
+
+          <div class="box-2">
+               <img src="/images/odim.png" alt="Odim Kingsley image" />
+          </div>
      </div>
 
 
+     <!--------------- ABOUT ---------------------------->
 
-
-     <!----------------------About Page Here -------------------->
-
-     <section class="about_page">
-          <a href="#about" class="about_link">About Me</a>
-          <div class="row">
-               <div class="column">
-                    <h1 class="about_title">Web Developing is my passion for Problem Solving.</h1>
-               </div>
-
-               <div class="column">
-                    <p class="paragraph_of_about">I have always been passionate about web development projects and have
-                         not stopped working and learning about new technologies as they emerges. Other than sitting in
-                         from of my display screen, I enjoy myself in casual sports such as playing football with
-                         friends or reading books.</p>
-
-                    <p class="paragraph_of_about">I'm grateful that my job allows me to work from anywhere. I am active
-                         on LinkedIn and Twitter where I share about my tech exposure and my upcoming projects.</p>
-               </div>
+     <a name="about" id="title">ABOUT ME</a>
+     <div class="container-1">
+          <div class="box-3">
+               <h1>Web Development has being my passion for Solving Web Problems</h1>
           </div>
 
-     </section>
+          <div class="box-4">
+               <p>I have always been passionate about web development projects and have
+                    not stopped working and learning about new technologies as they emerges. Other than sitting in
+                    from of my display screen, I enjoy myself in casual sports such as playing football with
+                    friends or reading books.</p>
 
-
-     <!----------------------Contact Form Here -------------------->
-
-     <div class="form-group">
-          <div class="row">
-               <div class="column">
-                    <a href="#contact" class="contact_link">Contact</a>
-                    <div class="container">
-                         <form action="action_page.php">
-                              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                              <input type="text" id="email" name="email" placeholder="Enter Your Email">
-                              <input type="text" id="phone" name="number" placeholder="Enter Phone Number">
-                              <textarea id="subject" name="subject" placeholder="Message..."
-                                   style="height:200px"></textarea>
-                              <input type="submit" value="Submit">
-                         </form>
-                    </div>
-               </div>
-
-               <div class="column">
-                    <h3>Social Media</h3>
-               </div>
+               <p>I'm grateful that my job allows me to work from anywhere. I am active
+                    on LinkedIn and Twitter where I share about my tech exposure and my upcoming projects.</p>
           </div>
-
-
-
-          <!--------------------Contact Address and Social Media---------------------------->
      </div>
 
+     <!--------------- CONTACT ME------------------------->
+
+     <a name="contact" id="title">CONTACT ME</a>
+
+     <div class="container-1">
+          <div class="box-5">
+               <h3>Send Me Mail</h3>
+               <form action="action_page.php">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <input type="text" id="email" name="email" placeholder="Enter Your Email">
+                    <input type="text" id="phone" name="number" placeholder="Enter Phone Number">
+                    <textarea id="subject" name="subject" placeholder="Message..." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+               </form>
+          </div>
+
+          <!------------------------Contact Address Here------------------------------------->
+
+          <div class="box-6">
+               <h3>Address</h3>
+               <ul>
+                    <li>Tel: +23481 7850 6546</li>
+                    <li>Email: okekings@gmail.com</li>
+                    <li>Location: Abuja, Nigeria</li>
+               </ul>
+          </div>
+
+          <!------------------------Social Media links ------------------------------------->
+
+          <div class="box-7">
+               <h3>Follow me on social media:</h3>
+               <a href="https://www.facebook.com/odimkingsley1" id="social-link">Odim
+                    Kingsley</a>
+               <a href="https://www.instagram.com/okekings" id="social-link">Okekings1</a>
+               <a href="https://www.twitter.com/odimkingsley1" id="social-link">Odim Kingsley</a>
+               <a href="https://www.linkedin.com/in/odimkingsley1" id="social-link">Odim Kingsley</a>
+          </div>
+     </div>
 </body>
-
 
 <!---------------- Footer -------------------->
 <footer>
-     <div class="footer_container">All Rights Reserved. &copy 2022 Odim Kingsley Portfolio</div>
+     <div class="footer_container">All Rights Reserved. <br />&copy 2022 Odim Kingsley Portfolio</div>
 </footer>
-
-
-<script srch="sitejs.js"></script>
 
 </html>
